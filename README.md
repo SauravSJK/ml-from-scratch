@@ -58,7 +58,7 @@ To explore the implementations or run the training scripts locally:
 
 1. Clone the repository:
    ```bash
-   git clone [https://github.com/yourusername/ml-from-scratch.git](https://github.com/yourusername/ml-from-scratch.git)
+   git clone [https://github.com/SauravSJK/ml-from-scratch.git](https://github.com/SauravSJK/ml-from-scratch.git)
    cd ml-from-scratch
 
 2. Create a clean virtual environment and install dependencies:
