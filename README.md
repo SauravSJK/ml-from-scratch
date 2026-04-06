@@ -35,20 +35,30 @@ The repository is structured to demonstrate the evolution from scalar-based comp
 
 ## 📐 Mathematical Intuition
 
-Understanding the underlying calculus is critical for debugging complex architectures. Here are a few core concepts implemented in this repository:
-
 **1. Log Loss (Binary Cross-Entropy)**
 To navigate elongated loss valleys in binary classification, the Logistic model optimizes:
-$$L = -\frac{1}{m} \sum_{i=1}^{m} [y_i \log(\hat{y}_i) + (1-y_i) \log(1-\hat{y}_i)]$$
+
+$$
+L = -\frac{1}{m} \sum_{i=1}^{m} [y_i \log(\hat{y}_i) + (1-y_i) \log(1-\hat{y}_i)]
+$$
 
 **2. Scaled Dot-Product Attention**
-The Transformer engine prevents softmax saturation by scaling the dot product of Queries and Keys by the square root of their dimension:
-$$\text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V$$
+The Transformer engine prevents softmax saturation by scaling the dot product:
+
+$$
+\text{Attention}(Q, K, V) = \text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
+$$
 
 **3. Adam Optimizer (First Moment)**
-The custom NumPy implementation tracks the exponentially decaying average of past gradients:
-$$m_t = \beta_1 m_{t-1} + (1 - \beta_1) g_t$$
-$$\hat{m}_t = \frac{m_t}{1 - \beta_1^t} \quad \text{(Bias Correction)}$$
+Tracking the exponentially decaying average of past gradients:
+
+$$
+m_t = \beta_1 m_{t-1} + (1 - \beta_1) g_t
+$$
+
+$$
+\hat{m}_t = \frac{m_t}{1 - \beta_1^t} \quad \text{(Bias Correction)}
+$$
 
 ---
 
