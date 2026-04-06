@@ -73,7 +73,8 @@ To explore the implementations or run the training scripts locally:
 
 2. Create a clean virtual environment and install dependencies:
 
-    ```python -m venv venv
+    ```bash
+    python -m venv venv
     source venv/bin/activate  # On Windows: venv\Scripts\activate
     pip install -r requirements.txt
 
