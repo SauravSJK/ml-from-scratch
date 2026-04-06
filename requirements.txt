@@ -1,0 +1,11 @@
+# Core Engine
+numpy>=1.24.0
+
+# Deep Learning Framework
+torch>=2.0.0
+
+# LLM & Production Integrations
+transformers>=4.30.0
+
+# Optional: Visualization for notebooks
+matplotlib>=3.7.0
